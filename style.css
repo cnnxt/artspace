@@ -1,0 +1,125 @@
+body {
+    font-family: "cofo-sans-mono-variable", sans-serif;
+    font-variation-settings: "wght" 400;
+    margin: 0;
+    padding: 20px;
+    background-color: #8eabe5;
+    font-size: 18px;
+    text-transform: lowercase;
+    cursor: url(https://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important;
+  }
+
+.container {
+    display: grid; /* enable grid layout */
+    grid-template-rows: auto auto auto; /* define three rows with height adjusted to their content */
+    gap: 20px; /* set spacing between grid items */
+    width: 85%;
+    margin: 0 auto;
+    /* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/symbols/sym-7/sym646.ani), url(https://cur.cursors-4u.net/symbols/sym-7/sym646.gif), auto !important;} /* End https://www.cursors-4u.com */
+}
+
+/* slide animation for header */
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+}
+
+header {
+    text-align: center;
+    background-color: #EFCA89;
+    padding: 10px 0;
+    margin: 0px auto;
+    font-family: "new-kansas", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 125px;
+    letter-spacing: 2px;
+    color: #de4141;
+    text-align: left;
+    animation: slide-in 1000ms;
+}
+
+#art-container {
+    border: 10px solid #ADBFEA;
+    margin: 4px;
+    height: auto;
+    background-color: #ADBFEA;
+
+}
+
+#art-container img {
+    width: auto; 
+    height: 280px;
+    margin: 0px auto;
+    align: float;
+}
+
+#image1, #image2, #image3, #image4, #image5, #image6, #image7, #art-container {
+    position: relative;
+}
+
+#controls {
+    display: grid; /* enable grid layout for controls */
+    grid-template-columns: repeat(3, 1fr); /* define three equal columns */
+    gap: 20px; /* set spacing between control items */
+}
+
+.control-group {
+    border: 8px solid #ADBFEA;
+    margin: 15px auto;
+    background-color: #ADBFEA;
+}
+
+footer {
+    border: 5px solid #EFCA89;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #EFCA89;
+    width: 50%;
+}
+
+.five-pointed-star {
+--star-color: #de4141;
+margin:1em auto;
+font-size:.5em;
+position: relative;
+display: block;
+width: 0px;
+height: 0px;
+border-right: 1em solid transparent;
+border-bottom: 0.7em solid var(--star-color);
+border-left: 1em solid transparent;
+transform: rotate(35deg);
+}
+
+.five-pointed-star:before {
+border-bottom: 0.8em solid var(--star-color);
+border-left: 0.3em solid transparent;
+border-right: 0.3em solid transparent;
+position: absolute;
+height: 0;
+width: 0;
+top: -0.45em;
+left: -0.65em;
+display: block;
+content:"";
+transform: rotate(-35deg);
+}
+
+.five-pointed-star:after {
+position: absolute;
+display: block;
+top: 0.03em;
+left: -1.05em;
+width: 0;
+height: 0;
+border-right: 1em solid transparent;
+border-bottom: 0.7em solid var(--star-color);
+border-left: 1em solid transparent;
+transform: rotate(-70deg);
+content:"";
+}

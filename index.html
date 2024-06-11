@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interactive art space</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- fonts from Adobe Fonts -->
+<link rel="stylesheet" href="https://use.typekit.net/qll1dbv.css"> 
+</head>
+<body>
+    <div class="container">
+        <header>interactive art space!</header>
+        <div id="art-container">
+            <!-- Art! -->
+            <img src="/images/wolf_green.png" id="image1" class="art-image" alt="Art Image 1">
+            <img src="/images/wolf_outline.png" id="image2" class="art-image" alt="Art Image 2">
+            <img src="/images/wolf_dots.png" id="image3" class="art-image" alt="Art Image 3">
+            <img src="/images/wolf_grey.png" id="image4" class="art-image" alt="Art Image 4">
+            <img src="/images/wolf_selfie.png" id="image5" class="art-image" alt="Art Image 5">
+            <img src="/images/star_arthurpx.gif" id="image6" class="art-image" alt="Art Image 6">
+            <img src="/images/ghost_arthurpx.gif" id="image7" class="art-image" alt="Art Image 7">
+        </div>
+
+        <div id="controls">
+                <!-- Controls for manipulating art -->
+                <div class="control-group" id="controls-container">
+                    <h3>customize the art space</h3>
+                    <label for="newColor">background color:</label>
+                    <input type="color" id="newColor" name="newColor" value="#ADBFEA">
+                    <br><br>
+                    </div> 
+
+                <div class="control-group" id="controls-image1">
+                    <h3>controls: cartoon wolf</h3>
+                    <label for="blend-mode-image1">blend</label>
+                    <select id="blend-mode-image1" class="blend-mode">
+                        <option value="normal">Normal</option>
+                        <option value="multiply">Multiply</option>
+                        <option value="screen">Screen</option>
+                        <option value="overlay">Overlay</option>
+                    </select>
+                    <br>
+                    <label for="position-x-image1">Position X:</label>
+                    <input type="range" id="position-x-image1" class="position-x" name="position-x-image1" min="-500" max="500" value="0">
+                    <br>
+                    <label for="position-y-image1">Position Y:</label>
+                    <input type="range" id="position-y-image1" class="position-y" name="position-y-image1" min="-500" max="500" step="1" value="0">
+                    <br>
+                    <label for="scale-image1">Scale: </label>
+                    <input type="range" id="scale-image1" min="0.1" max="2" step="0.1" value="1">
+                    <br>
+                    <label for="rotate-image1">Rotate: </label>
+                    <input type="range" id="rotate-image1" min="0" max="360" step="1" value="0">
+                </div>
+
+                <div class="control-group" id="controls-image2">
+                    <h3>controls: outlined wolf</h3>
+                    <label for="blend-mode-image2">Blend Mode:</label>
+                    <select id="blend-mode-image2" class="blend-mode">
+                        <option value="normal">Normal</option>
+                        <option value="multiply">Multiply</option>
+                        <option value="screen">Screen</option>
+                        <option value="overlay">Overlay</option>
+                    </select>
+                    <br>
+                    <label for="position-x-image2">Position X:</label>
+                    <input type="range" id="position-x-image2" class="position-x" name="position-x-image2" min="-500" max="500" value="0">
+                    <br>
+                    <label for="position-y-image2">Position Y:</label>
+                    <input type="range" id="position-y-image2" class="position-y" name="position-y-image2" min="-500" max="500" step="1" value="0">
+                    <br>
+                    <label for="scale-image2">Scale: </label>
+                    <input type="range" id="scale-image2" min="0.1" max="2" step="0.1" value="1">
+                    <br>
+                    <label for="rotate-image2">Rotate: </label>
+                    <input type="range" id="rotate-image2" min="0" max="360" step="1" value="0">
+                </div>
+
+                <div class="control-group" id="controls-image3">
+                    <h3>controls: dotted wolf</h3>
+                    <label for="blend-mode-image3">Blend Mode:</label>
+                    <select id="blend-mode-image3" class="blend-mode">
+                        <option value="normal">Normal</option>
+                        <option value="multiply">Multiply</option>
+                        <option value="screen">Screen</option>
+                        <option value="overlay">Overlay</option>
+                    </select>
+                    <br>
+                    <label for="position-x-image3">Position X:</label>
+                    <input type="range" id="position-x-image3" class="position-x" name="position-x-image3" min="-500" max="500" value="0">
+                    <br>
+                    <label for="position-y-image3">Position Y:</label>
+                    <input type="range" id="position-y-image3" class="position-y" name="position-y-image3" min="-500" max="500" step="1" value="0">
+                    <br>
+                    <label for="scale-image3">Scale: </label>
+                    <input type="range" id="scale-image3" min="0.1" max="2" step="0.1" value="1">
+                    <br>
+                    <label for="rotate-image3">Rotate: </label>
+                    <input type="range" id="rotate-image3" min="0" max="360" step="1" value="0">
+                </div>
+
+                <div class="control-group" id="controls-image3">
+                    <h3>controls: grey wolf</h3>
+                    <label for="blend-mode-image4">Blend Mode:</label>
+                    <select id="blend-mode-image4" class="blend-mode">
+                        <option value="normal">Normal</option>
+                        <option value="multiply">Multiply</option>
+                        <option value="screen">Screen</option>
+                        <option value="overlay">Overlay</option>
+                    </select>
+                    <br>
+                    <label for="position-x-image4">Position X:</label>
+                    <input type="range" id="position-x-image4" class="position-x" name="position-x-image4" min="-500" max="500" value="0">
+                    <br>
+                    <label for="position-y-image4">Position Y:</label>
+                    <input type="range" id="position-y-image4" class="position-y" name="position-y-image4" min="-500" max="500" step="1" value="0">
+                    <br>
+                    <label for="scale-image4">Scale: </label>
+                    <input type="range" id="scale-image4" min="0.1" max="2" step="0.1" value="1">
+                    <br>
+                    <label for="rotate-image4">Rotate: </label>
+                    <input type="range" id="rotate-image4" min="0" max="360" step="1" value="0">
+                </div>
+
+                <div class="control-group" id="controls-image5">
+                    <h3>controls: wolf taking selfie</h3>
+                    <label for="blend-mode-image5">Blend Mode:</label>
+                    <select id="blend-mode-image5" class="blend-mode">
+                        <option value="normal">Normal</option>
+                        <option value="multiply">Multiply</option>
+                        <option value="screen">Screen</option>
+                        <option value="overlay">Overlay</option>
+                    </select>
+                    <br>
+                    <label for="position-x-image5">Position X:</label>
+                    <input type="range" id="position-x-image5" class="position-x" name="position-x-image5" min="-500" max="500" value="0">
+                    <br>
+                    <label for="position-y-image5">Position Y:</label>
+                    <input type="range" id="position-y-image5" class="position-y" name="position-y-image5" min="-500" max="500" step="1" value="0">
+                    <br>
+                    <label for="scale-image5">Scale: </label>
+                    <input type="range" id="scale-image5" min="0.1" max="2" step="0.1" value="1">
+                    <br>
+                    <label for="rotate-image5">Rotate: </label>
+                    <input type="range" id="rotate-image5" min="0" max="360" step="1" value="0">
+                </div>
+
+            <div class="control-group" id="controls-image5">
+                <h3>controls: star</h3>
+                <label for="blend-mode-image6">Blend Mode:</label>
+                <select id="blend-mode-image6" class="blend-mode">
+                    <option value="normal">Normal</option>
+                    <option value="multiply">Multiply</option>
+                    <option value="screen">Screen</option>
+                    <option value="overlay">Overlay</option>
+                    <!-- Add more blend modes as needed -->
+                </select>
+                <br>
+                <label for="position-x-image6">Position X:</label>
+                <input type="range" id="position-x-image6" class="position-x" name="position-x-image6" min="-500" max="500" value="0">
+                <br>
+                <label for="position-y-image6">Position Y:</label>
+                <input type="range" id="position-y-image6" class="position-y" name="position-y-image6" min="-500" max="500" step="1" value="0">
+                <br>
+                <label for="scale-image6">Scale: </label>
+                <input type="range" id="scale-image6" min="0.1" max="2" step="0.1" value="1">
+                <br>
+                <label for="rotate-image6">Rotate: </label>
+                <input type="range" id="rotate-image6" min="0" max="360" step="1" value="0">
+            </div>
+
+            <div class="control-group" id="controls-image7">
+                <h3>controls: ghost
+                </h3>
+                <label for="blend-mode-image7">Blend Mode:</label>
+                <select id="blend-mode-image7" class="blend-mode">
+                    <option value="normal">Normal</option>
+                    <option value="multiply">Multiply</option>
+                    <option value="screen">Screen</option>
+                    <option value="overlay">Overlay</option>
+                </select>
+                <br>
+                <label for="position-x-image7">Position X:</label>
+                <input type="range" id="position-x-image7" class="position-x" name="position-x-image7" min="-500" max="500" value="0">
+                <br>
+                <label for="position-y-image7">Position Y:</label>
+                <input type="range" id="position-y-image7" class="position-y" name="position-y-image7" min="-500" max="500" step="1" value="0">
+                <br>
+                <label for="scale-image7">Scale: </label>
+                <input type="range" id="scale-image7" min="0.1" max="2" step="0.1" value="1">
+                <br>
+                <label for="rotate-image7">Rotate: </label>
+                <input type="range" id="rotate-image7" min="0" max="360" step="1" value="0">
+</div>
+</div>
+</div>
+
+<footer>
+<div class="five-pointed-star"></div> site by connie tu<br>
+wolf art by connie tu<br>
+star and ghost art by <a href="https://pixabay.com/users/arthurpx-23471562/">arthurpx</a>
+</footer>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+const colorPicker = document.getElementById('newColor');
+const artContainer = document.getElementById('art-container');
+
+    colorPicker.addEventListener('input', (e) => {
+        artContainer.style.backgroundColor = e.target.value;})
+});
+
+    // Initialize variables to keep track of constants
+        const images = document.querySelectorAll('.art-image');
+        const img1 = document.getElementById('image1');
+        const img2 = document.getElementById('image2');
+        const img3 = document.getElementById('image3');
+        const img4 = document.getElementById('image4');
+        const img5 = document.getElementById('image5');
+        const img6 = document.getElementById('image6');
+        const img7 = document.getElementById('image7');
+
+    // Initialize variables to keep track of blend mode, position, scale, rotation
+        const blendModeSelect1 = document.getElementById(`blend-mode-image1`);
+        const blendModeSelect2 = document.getElementById(`blend-mode-image2`);
+        const blendModeSelect3 = document.getElementById(`blend-mode-image3`);
+        const blendModeSelect4 = document.getElementById(`blend-mode-image4`);
+        const blendModeSelect5 = document.getElementById(`blend-mode-image5`);
+        const blendModeSelect6 = document.getElementById(`blend-mode-image6`);
+        const blendModeSelect7 = document.getElementById(`blend-mode-image7`);
+
+        const xPosInputImg1 = document.getElementById('position-x-image1');
+        const yPosInputImg1 = document.getElementById('position-y-image1');
+        const xPosInputImg2 = document.getElementById('position-x-image2');
+        const yPosInputImg2 = document.getElementById('position-y-image2');
+        const xPosInputImg3 = document.getElementById('position-x-image3');
+        const yPosInputImg3 = document.getElementById('position-y-image3');
+        const xPosInputImg4 = document.getElementById('position-x-image4');
+        const yPosInputImg4 = document.getElementById('position-y-image4');
+        const xPosInputImg5 = document.getElementById('position-x-image5');
+        const yPosInputImg5 = document.getElementById('position-y-image5');
+        const xPosInputImg6 = document.getElementById('position-x-image6');
+        const yPosInputImg6 = document.getElementById('position-y-image6');
+        const xPosInputImg7 = document.getElementById('position-x-image7');
+        const yPosInputImg7 = document.getElementById('position-y-image7');
+    
+        const scaleInput1 = document.getElementById('scale-image1');
+        const rotateInput1 = document.getElementById('rotate-image1');
+        const scaleInput2 = document.getElementById('scale-image2');
+        const rotateInput2 = document.getElementById('rotate-image2');
+        const scaleInput3 = document.getElementById('scale-image3');
+        const rotateInput3 = document.getElementById('rotate-image3');
+        const scaleInput4 = document.getElementById('scale-image4');
+        const rotateInput4 = document.getElementById('rotate-image4');
+        const scaleInput5 = document.getElementById('scale-image5');
+        const rotateInput5 = document.getElementById('rotate-image5');
+        const scaleInput6 = document.getElementById('scale-image6');
+        const rotateInput6 = document.getElementById('rotate-image6');
+        const scaleInput7 = document.getElementById('scale-image7');
+        const rotateInput7 = document.getElementById('rotate-image7');
+
+        let currXPos1 = xPosInputImg1.value;
+        let currYPos1 = yPosInputImg1.value;
+        let currXPos2 = xPosInputImg2.value;
+        let currYPos2 = yPosInputImg2.value;
+        let currXPos3 = xPosInputImg3.value;
+        let currYPos3 = yPosInputImg3.value;
+        let currXPos4 = xPosInputImg4.value;
+        let currYPos4 = yPosInputImg4.value;
+        let currXPos5 = xPosInputImg5.value;
+        let currYPos5 = yPosInputImg5.value;
+        let currXPos6 = xPosInputImg6.value;
+        let currYPos6 = yPosInputImg6.value;
+        let currXPos7 = xPosInputImg7.value;
+        let currYPos7 = yPosInputImg7.value;
+    
+        // Initialize variables to keep track of current scale, rotation
+        let currentScale1 = scaleInput1.value;
+        let currentRotate1 = rotateInput1.value;
+        let currentScale2 = scaleInput2.value;
+        let currentRotate2 = rotateInput2.value;
+        let currentScale3 = scaleInput3.value;
+        let currentRotate3 = rotateInput3.value;
+        let currentScale4 = scaleInput4.value;
+        let currentRotate4 = rotateInput4.value;
+        let currentScale5 = scaleInput5.value;
+        let currentRotate5 = rotateInput5.value;
+        let currentScale6 = scaleInput6.value;
+        let currentRotate6 = rotateInput6.value;
+        let currentScale7 = scaleInput7.value;
+        let currentRotate7 = rotateInput7.value;
+
+        // Function to update the transform property of the image
+        const updateTransform1 = () => {
+            img1.style.transform = `scale(${currentScale1}) rotate(${currentRotate1}deg)`;
+            img1.style.left = `${currXPos1}px`;
+            img1.style.top = `${currYPos1}px`;
+        };
+        const updateTransform2 = () => {
+            img2.style.transform = `scale(${currentScale2}) rotate(${currentRotate2}deg)`;
+            img2.style.left = `${currXPos2}px`;
+            img2.style.top = `${currYPos2}px`;
+        };
+        const updateTransform3 = () => {
+            img3.style.transform = `scale(${currentScale3}) rotate(${currentRotate3}deg)`;
+            img3.style.left = `${currXPos3}px`;
+            img3.style.top = `${currYPos3}px`;
+        };
+        const updateTransform4 = () => {
+            img4.style.transform = `scale(${currentScale4}) rotate(${currentRotate4}deg)`;
+            img4.style.left = `${currXPos4}px`;
+            img4.style.top = `${currYPos4}px`;
+        };
+        const updateTransform5 = () => {
+            img5.style.transform = `scale(${currentScale5}) rotate(${currentRotate5}deg)`;
+            img5.style.left = `${currXPos5}px`;
+            img5.style.top = `${currYPos5}px`;
+        };
+        const updateTransform6 = () => {
+            img6.style.transform = `scale(${currentScale6}) rotate(${currentRotate6}deg)`;
+            img6.style.left = `${currXPos6}px`;
+            img6.style.top = `${currYPos6}px`;
+        };
+        const updateTransform7 = () => {
+            img7.style.transform = `scale(${currentScale7}) rotate(${currentRotate7}deg)`;
+            img7.style.left = `${currXPos7}px`;
+            img7.style.top = `${currYPos7}px`;
+        };
+
+
+        // Event listeners for scale, rotate, opacity, position inputs
+        scaleInput1.addEventListener('input', (e) => {
+            currentScale1 = e.target.value;
+            updateTransform1();
+        });
+
+        rotateInput1.addEventListener('input', (e) => {
+            currentRotate1 = e.target.value;
+            updateTransform1();
+        });
+
+        xPosInputImg1.addEventListener('input', (e) => {
+            currXPos1 = e.target.value;
+            updateTransform1();
+        });
+    
+        yPosInputImg1.addEventListener('input', (e) => {
+            currYPos1 = e.target.value;
+            updateTransform1();
+        });
+    
+        scaleInput2.addEventListener('input', (e) => {
+            currentScale2 = e.target.value;
+            updateTransform2();
+        });
+
+        rotateInput2.addEventListener('input', (e) => {
+            currentRotate2 = e.target.value;
+            updateTransform2();
+        });
+
+        xPosInputImg2.addEventListener('input', (e) => {
+            currXPos2 = e.target.value;
+            updateTransform2();
+        });
+    
+        yPosInputImg2.addEventListener('input', (e) => {
+            currYPos2 = e.target.value;
+            updateTransform2();
+        });
+
+        scaleInput3.addEventListener('input', (e) => {
+            currentScale3 = e.target.value;
+            updateTransform3();
+        });
+
+        rotateInput3.addEventListener('input', (e) => {
+            currentRotate3 = e.target.value;
+            updateTransform3();
+        });
+
+        xPosInputImg3.addEventListener('input', (e) => {
+            currXPos3 = e.target.value;
+            updateTransform3();
+        });
+    
+        yPosInputImg3.addEventListener('input', (e) => {
+            currYPos3 = e.target.value;
+            updateTransform3();
+        });
+
+        scaleInput4.addEventListener('input', (e) => {
+            currentScale4 = e.target.value;
+            updateTransform4();
+        });
+
+        rotateInput4.addEventListener('input', (e) => {
+            currentRotate4 = e.target.value;
+            updateTransform4();
+        });
+
+        xPosInputImg4.addEventListener('input', (e) => {
+            currXPos4 = e.target.value;
+            updateTransform4();
+        });
+    
+        yPosInputImg4.addEventListener('input', (e) => {
+            currYPos4 = e.target.value;
+            updateTransform4();
+        });
+
+        scaleInput5.addEventListener('input', (e) => {
+            currentScale5 = e.target.value;
+            updateTransform5();
+        });
+
+        rotateInput5.addEventListener('input', (e) => {
+            currentRotate5 = e.target.value;
+            updateTransform5();
+        });
+
+        xPosInputImg5.addEventListener('input', (e) => {
+            currXPos5 = e.target.value;
+            updateTransform5();
+        });
+    
+        yPosInputImg5.addEventListener('input', (e) => {
+            currYPos5 = e.target.value;
+            updateTransform5();
+        });
+
+        scaleInput6.addEventListener('input', (e) => {
+            currentScale6 = e.target.value;
+            updateTransform6();
+        });
+
+        rotateInput6.addEventListener('input', (e) => {
+            currentRotate6 = e.target.value;
+            updateTransform6();
+        });
+
+        xPosInputImg6.addEventListener('input', (e) => {
+            currXPos6 = e.target.value;
+            updateTransform6();
+        });
+    
+        yPosInputImg6.addEventListener('input', (e) => {
+            currYPos6 = e.target.value;
+            updateTransform6();
+        });
+
+        scaleInput7.addEventListener('input', (e) => {
+            currentScale7 = e.target.value;
+            updateTransform7();
+        });
+
+        rotateInput7.addEventListener('input', (e) => {
+            currentRotate7 = e.target.value;
+            updateTransform7();
+        });
+
+        xPosInputImg7.addEventListener('input', (e) => {
+            currXPos7 = e.target.value;
+            updateTransform7();
+        });
+    
+        yPosInputImg7.addEventListener('input', (e) => {
+            currYPos7 = e.target.value;
+            updateTransform7();
+        });
+
+        blendModeSelect1.addEventListener('change', (e) => {
+            img1.style.mixBlendMode = e.target.value;
+        }); 
+
+        blendModeSelect2.addEventListener('change', (e) => {
+            img2.style.mixBlendMode = e.target.value;
+        }); 
+
+        blendModeSelect3.addEventListener('change', (e) => {
+            img3.style.mixBlendMode = e.target.value;
+        }); 
+
+        blendModeSelect4.addEventListener('change', (e) => {
+            img4.style.mixBlendMode = e.target.value;
+        }); 
+
+        blendModeSelect5.addEventListener('change', (e) => {
+            img5.style.mixBlendMode = e.target.value;
+        }); 
+
+        blendModeSelect6.addEventListener('change', (e) => {
+            img6.style.mixBlendMode = e.target.value;
+        }); 
+
+        blendModeSelect7.addEventListener('change', (e) => {
+            img7.style.mixBlendMode = e.target.value;
+        }); 
+
+        bgColorInput.addEventListener('input', (e) => {
+            artContainer.style.backgroundColor = e.target.value;
+        });
+</script>
+</body>
+</html>
